@@ -107,12 +107,13 @@
     <section id="state">
       <div class="wrap">
         <h2>Where it stands</h2>
-        <p class="lead">Version 0.1.0 is a preview: a freelancer's year in the terminal, in the web app and in the desktop
-          app, in German and English. Not for a real tax return yet – the German mappings are drafts until tax advisers have reviewed them.</p>
+        <p class="lead">Version 0.2.0 is a preview: a freelancer's year in the terminal, in the web app and in the desktop
+          app, in German and English – on all your devices, end-to-end encrypted. Not for a real tax return yet – the
+          German mappings are drafts until tax advisers have reviewed them.</p>
         <ol class="steps">
-          <li class="now"><span class="name">0.1 preview</span><span class="what">books for a person with cash basis or double entry, opening balances, bank statements (camt.053, MT940, CSV) matched to bookings, e-invoices read and written as XRechnung or ZUGFeRD, the advance VAT returns with their deadlines, the Anlage EÜR, the HGB statements and the GoBD data transfer – in the terminal, on the command line, in the web app and in the desktop app</span></li>
-          <li><span class="name">Next</span><span class="what">mobile apps, synchronisation between devices end-to-end encrypted, organisations and people with roles</span></li>
-          <li><span class="name">Then</span><span class="what">the German filings through ELSTER, payroll, further countries</span></li>
+          <li class="now"><span class="name">0.2 preview</span><span class="what">books for a person with cash basis or double entry, opening balances, bank statements (camt.053, MT940, CSV) matched to bookings, e-invoices read and written as XRechnung or ZUGFeRD, the advance VAT returns with their deadlines, the Anlage EÜR, the HGB statements and the GoBD data transfer – in the terminal, on the command line, in the web app and in the desktop app; synchronised between your devices through a relay, end-to-end encrypted, and shared with people who read or book</span></li>
+          <li><span class="name">Next</span><span class="what">mobile apps, the German filings through ELSTER, the VAT return of the year</span></li>
+          <li><span class="name">Then</span><span class="what">payroll, further countries</span></li>
         </ol>
         <p class="note">What changed is in the <a href="https://github.com/spezado/spezado/blob/main/CHANGELOG.md">changelog</a>, the full plan in the <a href="https://github.com/spezado/spezado/blob/main/docs/spec.md">design</a>.</p>
       </div>
@@ -121,7 +122,9 @@
     <section id="try">
       <div class="wrap">
         <h2>Try it</h2>
-        <p class="lead">spezado runs on your own device – nothing leaves it. Build it with
+        <p class="lead">spezado runs on your own device – nothing leaves it unencrypted. Download it for Linux, macOS or
+          Windows from the <a href="https://github.com/spezado/spezado/releases">releases</a>, unpack it and
+          run <code>spezado tui</code> or <code>spezado serve</code> – or build it yourself with
           <a href="https://rustup.rs">Rust</a>; the right toolchain is picked up from the repository.</p>
         <div class="grid two">
           <div class="cell">
