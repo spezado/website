@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>spezado – free accounting for everyone</title>
-  <meta name="description" content="spezado is free accounting software for private finances, freelancers, companies and non-profits – local first, on an open protocol. A falkOSS project, in early development.">
+  <meta name="description" content="spezado is free accounting software for private finances, freelancers, companies and non-profits – local first, on an open protocol. A falkOSS project, available as a preview.">
   <meta name="theme-color" content="#F4EEE8" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#071F25" media="(prefers-color-scheme: dark)">
   <meta name="color-scheme" content="light dark">
@@ -39,6 +39,7 @@
           <a href="#what">What</a>
           <a href="#how">How</a>
           <a href="#state">State</a>
+          <a href="#try">Try it</a>
           <a href="#involved">Get involved</a>
         </nav>
         <div class="theme" role="group" aria-label="Colour scheme" hidden>
@@ -106,13 +107,39 @@
     <section id="state">
       <div class="wrap">
         <h2>Where it stands</h2>
-        <p class="lead">spezado is at its beginning – there is nothing for daily use yet.</p>
+        <p class="lead">Version 0.1.0 is a preview: a freelancer's year in the terminal and in the web app, in German and
+          English. Not for a real tax return yet – the German mappings are drafts until tax advisers have reviewed them.</p>
         <ol class="steps">
-          <li class="now"><span class="name">Version 0</span><span class="what">a core that builds the books from librotenado events – balances per account and currency, reversals, the review list – and a command line to try it</span></li>
-          <li><span class="name">Next</span><span class="what">storage in SQLite, organisations and people, the terminal interface, the harmonised chart of accounts</span></li>
-          <li><span class="name">Then</span><span class="what">bank import, receipt recognition, e-invoices, reports – and the German filings through ELSTER</span></li>
+          <li class="now"><span class="name">0.1 preview</span><span class="what">books for a person with cash basis or double entry, opening balances, bank statements (camt.053, MT940, CSV) matched to bookings, e-invoices read and written as XRechnung, the advance VAT returns with their deadlines, the Anlage EÜR, the HGB statements and the GoBD data transfer – in the terminal, on the command line and in the web app</span></li>
+          <li><span class="name">Next</span><span class="what">desktop and mobile apps, synchronisation between devices end-to-end encrypted, organisations and people with roles</span></li>
+          <li><span class="name">Then</span><span class="what">the German filings through ELSTER, payroll, further countries</span></li>
         </ol>
-        <p class="note">The full plan is in the <a href="https://github.com/spezado/spezado/blob/main/docs/spec.md">design</a>.</p>
+        <p class="note">What changed is in the <a href="https://github.com/spezado/spezado/blob/main/CHANGELOG.md">changelog</a>, the full plan in the <a href="https://github.com/spezado/spezado/blob/main/docs/spec.md">design</a>.</p>
+      </div>
+    </section>
+
+    <section id="try">
+      <div class="wrap">
+        <h2>Try it</h2>
+        <p class="lead">spezado runs on your own device – nothing leaves it. Build it with
+          <a href="https://rustup.rs">Rust</a>; the right toolchain is picked up from the repository.</p>
+        <div class="grid two">
+          <div class="cell">
+            <h3>In the terminal</h3>
+<pre><code>git clone https://github.com/spezado/spezado
+cd spezado
+cargo run --release -- tui</code></pre>
+          </div>
+          <div class="cell">
+            <h3>In the browser</h3>
+<pre><code>git clone https://github.com/spezado/spezado
+cd spezado
+(cd web &amp;&amp; pnpm install &amp;&amp; pnpm build)
+cargo run --release -- serve</code></pre>
+            <p>The web app needs <a href="https://nodejs.org">Node.js</a> and <a href="https://pnpm.io">pnpm</a> to be built. Open the address <code>serve</code> shows: it pairs this browser.</p>
+          </div>
+        </div>
+        <p class="note">Your books are kept in spezado's folder in your data directory, or wherever <code>--dir</code> or <code>SPEZADO_DIR</code> say.</p>
       </div>
     </section>
 
