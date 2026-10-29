@@ -34,3 +34,4 @@ the documentation. `404.html` uses root paths, which resolve under the custom do
 The site's code is **AGPL-3.0-or-later** (`LICENSE`); the fonts in `assets/fonts/` are under the SIL Open Font
 License 1.1; the brand's artwork (icons, lockups, marks) is CC BY-ND 4.0 as in
 [spezado/brand](https://github.com/spezado/brand), and the name and brand are falkOSS's – not covered by any of these.
+Every file's licence is in `REUSE.toml` or its SPDX header ([REUSE](https://reuse.software), checked in CI).
