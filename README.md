@@ -8,8 +8,8 @@ without JavaScript the page simply follows the system. A [falkOSS](https://falko
 | Path | What |
 |---|---|
 | `index.html`, `style.css`, `theme.js`, `404.html` | the page (English) |
-| `favicon.*`, `apple-touch-icon.png`, `icon-*.png`, `site.webmanifest`, `social.png` | head icons – **generated** by `brand/generate.py` in `spezado/spezado` (`brand/web/`), copied here |
-| `assets/` | lockups and marks (from `brand/svg/`), `assets/fonts/` – Domitian as WOFF2 (from `brand/web/fonts/`, SIL Open Font License 1.1, `assets/fonts/OFL.txt`) |
+| `favicon.*`, `apple-touch-icon.png`, `icon-*.png`, `site.webmanifest`, `social.png` | head icons – **generated** in [spezado/brand](https://github.com/spezado/brand) (`web/`), copied here |
+| `assets/` | lockups and marks (from spezado/brand, `svg/`), `assets/fonts/` – Domitian as WOFF2 (from `web/fonts/`, SIL Open Font License 1.1, `assets/fonts/OFL.txt`) |
 
 Imprint and privacy policy are falkoss.org's – same operator, one place to keep them current.
 
@@ -32,4 +32,5 @@ the documentation. `404.html` uses root paths, which resolve under the custom do
 ## Licence
 
 The site's code is **AGPL-3.0-or-later** (`LICENSE`); the fonts in `assets/fonts/` are under the SIL Open Font
-License 1.1; the brand (name, logo, marks) is not covered by either.
+License 1.1; the brand's artwork (icons, lockups, marks) is CC BY-ND 4.0 as in
+[spezado/brand](https://github.com/spezado/brand), and the name and brand are falkOSS's – not covered by any of these.
